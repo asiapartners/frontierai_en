@@ -86,7 +86,7 @@ Azure AI Foundry는 11월에 있었던 Microsoft Ignite에서 Microsoft로 브�
 
 1. 환경 변수 설정하기
 
-이번 단계에서는 앞서 생성한 Microsoft Foundry와 Bing Grounding 리소스의 정보를 환경 변수로 설정합니다. .env.sample 파일을 .env 파일로 변경하고 Azure OpenAI, Foundry Project, Bing Grounding 정보를 입력합니다.
+이번 단계에서는 앞서 생성한 Microsoft Foundry와 Bing Grounding 리소스의 정보를 환경 변수로 설정합니다. ./1_basic_agent/.env.sample 파일을 ./1_basic_agent/.env 파일로 변경하고 Azure OpenAI, Foundry Project, Bing Grounding 정보를 입력합니다.
 
 2. 코드 샘플 실행하기
 
