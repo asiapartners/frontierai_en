@@ -50,6 +50,17 @@ git clone https://github.com/jeongaelee/frontierai.git
 * Azure OpenAI
 * Bing Grouding
 
+## .env 파일
+
+본 실습에서는 3개의 .env 파일을 사용합니다. 각각의 .env 파일은 다음과 같은 용도로 사용됩니다:
+
+### Part 1의 Microsoft Agent Framework Basic Concept HoL에서는 1개의 .env 파일을 사용합니다. 
+* ./1_basic_agent/.env.sample ==> 1_basic-concept-with-msaf.ipynb을 위한 .env
+
+### Part 2의 Hands-on Lab에서는 2개의 .env 파일을 사용합니다.
+* ./agentic_ai/agents/.env.sample ==> Agent application을 위한 .env
+* ./mcp/.env.sample ==> MCP server를 위한 .env
+
 ## 실습 순서
 
 ### Part 1
