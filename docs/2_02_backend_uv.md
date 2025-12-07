@@ -93,9 +93,43 @@
 
 ## 성공 기준
 - Backend 서비스가 `http://localhost:7000`에서 실행 중이어야 합니다.
+
 - Agent Framework이 적절히 구성되어야 합니다.
+
+- Backend가 MCP 서버와 통신할 수 있어야 합니다.
+  - Backend 서버를 검증할 수 있는 아래의 샘플 powershell 명령어를 실행해보세요:
+    ```powershell
+    # Define the URL
+    $uri = "http://localhost:7000/chat"
+  
+    # Define headers
+    $headers = @{
+        Accept = "application/json"
+        "Content-Type" = "application/json"
+    }
+    
+    # Define the JSON body
+    $body = @{
+        session_id = "123"
+        prompt     = "What can you help me with?"
+    } | ConvertTo-Json
+    
+    # Send the POST request
+    $response = Invoke-WebRequest -Uri $uri -Method POST -Headers $headers -Body $body
+    
+    # Output the response
+    $response.Content
+    ```
+    <img src="media/02_backend_chat_response.png" />
+ 
+  - A sample curl command to validate things are online:
+    ```bash
+    `curl -X 'POST' 'http://localhost:7000/chat'  -H 'accept: application/json'  -H 'Content-Type: application/json'  -d '{"session_id": "123", "prompt": "What can you help me with?"}'`
+    ```
+
 - Backend가 MCP 서버와 통신할 수 있어야 합니다.
   - 온라인 상태를 확인하는 샘플 curl 명령어: `curl -X 'POST' 'http://localhost:7000/chat'  -H 'accept: application/json'  -H 'Content-Type: application/json'  -d '{"session_id": "123", "prompt": "What can you help me with?"}'`
+
 - 프론트엔드와 연결할 준비가 되어 있어야 합니다.
 
 ## 다음 단계: Frontend 서비스
