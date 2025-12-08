@@ -6,7 +6,7 @@
 
 ## 사전 준비 사항
 - [Step 1: Workshop Setup](2_00_setup.md) 완료
-- [Step 2: MCP Setup (uv)](01_mcp_uv.md) 완료
+- [Step 2: MCP Setup (uv)](2_01_mcp_uv.md) 완료
 - [Step 3: Backend Setup (uv)](02_backend_uv.md) 완료
 - MCP 구동 확인: `http://localhost:8000/mcp`
 - Backend 서비스 구동 확인: `http://localhost:7000/chat`
@@ -68,10 +68,20 @@ React frontend는 기본적으로 `http://localhost:7000`에 연결됩니다.
 
     <img src="media/03_frontend_react_chat.png" />
 
+> Note: 아래의 프롬프트를 사용하여 에이전트와 상호작용해 보세요:
+> ```
+> What can you help me with?
+> ```
+
 - 에이전트와 채팅하고 실시간 토큰 스트리밍 및 내부 에이전트 동작(예: 도구 호출, 계획 단계)을 관찰하세요.
-  
+
     <img src="media/03_frontend_magentic_steps.png" />
 
+> Note: 아래의 프롬프트를 사용하여 내부 에이전트 동작을 확인 해 보세요:
+> ```
+> Please retrieve the most recent invoice for customer 101, including line items and total charges. Additionally, compare it with previous invoices to identify why the latest invoice is higher and note any new charges, fee changes, expired discounts, upgrades, or other relevant issues. Cite relevant tool results and data references in your response.
+> ```
+  
 ## 트러블슈팅
 - **포트 3000이 이미 사용 중인가요?** React 앱이 다른 포트를 사용하겠냐고 묻습니다. `Y`를 입력하여 수락하세요.
 - **npm install이 실패하나요?** npm 캐시를 지우고 다시 시도해 보세요: `npm cache clean --force`
