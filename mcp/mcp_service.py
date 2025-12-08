@@ -403,7 +403,7 @@ async def _protected_resource_metadata(request: Request):
 ##############################################################################  
 #                               TOOL ENDPOINTS                               #  
 ##############################################################################  
-##insert tool endpoint code here
+##insert tool endpoint code here 1
 ##Tool 1: List All Customers
   
 @mcp.tool(description="Get a full customer profile including their subscriptions")  
@@ -413,7 +413,7 @@ async def get_customer_detail(
     data = await get_customer_detail_async(customer_id)
     return CustomerDetail(**data)  
 
-##insert tool endpoint code here
+##insert tool endpoint code here 2
 ##Tool 2: Get Subscription Detail 
   
 @mcp.tool(description="Return invoice‑level payments list")  
@@ -598,3 +598,4 @@ async def get_billing_summary(
 #                                RUN SERVER                                  #  
 ##############################################################################  
 ##insert Run MCP Server code here
+
