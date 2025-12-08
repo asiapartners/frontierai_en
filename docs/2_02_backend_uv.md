@@ -14,12 +14,14 @@
 
 **Single Agent (`agents.agent_framework.single_agent`):**
 
+- 하나의 에이전트가 모든 작업을 처리하는 방식. (단순한 시나리오에 적합: FAQ, 기본 지원 등)
 - MCP 도구를 사용하는 기본 ChatAgent
 - WebSocket을 통한 토큰 단위 스트리밍
 - React UI에서 도구 호출 가시화
 - 요청 간 세션 상태 지속(persistence)
 
 **Magentic Multi-Agent (`agents.agent_framework.multi_agent.magentic_group`):**
+- 여러 에이전트가 협업 대화를 통해 문제를 해결하는 패턴.
 - 지능적인 오케스트레이터가 전문 에이전트(CRM/청구, 제품/프로모션, 보안)를 조율
 - 오케스트레이터 계획 및 에이전트 응답의 실시간 스트리밍
 - Human-in-the-loop 지원을 위한 맞춤형 진행 레저(progress ledger를 제공)  
@@ -27,6 +29,7 @@
 - React UI는 전체 내부 프로세스 표시: 작업 레저, 지시사항, 에이전트 도구 호출
 
 **Handoff Multi-Agent (`agents.agent_framework.multi_agent.handoff_multi_domain_agent`):**
+- 작업을 처리하는 도중, 더 적합한 에이전트에게 동적으로 위임하는 패턴
 - 지능형 도메인 라우팅을 통한 에이전트-사용자 직접 통신
 - 전문가 간 컨텍스트 전송 설정 가능 (고객 정보와 히스토리 유지)
 - 원활한 핸드오프를 위한 스마트 인텐트 분류
@@ -153,5 +156,3 @@
 
 
 **📌 Important:** Agent Framework은 **React 프론트엔드**와 함께 사용할 때 내부 에이전트 프로세스, 오케스트레이터 계획 및 도구 호출을 실시간으로 시각화하는 데 가장 적합합니다.
-
-
