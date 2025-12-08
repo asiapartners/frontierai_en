@@ -90,6 +90,7 @@ async def get_all_customers() -> List[CustomerSummary]:
 ```
 
 "insert tool endpoint code here 2"라는 키워드를 찾아 다음 코드로 교체합니다:
+
 **Tool 2: Get Subscription Detail**
 
 ```python
@@ -172,3 +173,4 @@ if __name__ == "__main__":
 * [Hands-on Lab 1 – MCP Server](2_01_mcp_uv.md)
 * [Hands-on Lab 2 – Backend](2_02_backend_uv.md)
 * [Hands-on Lab 3 – Frontend](2_03_frontend_react.md)
+
