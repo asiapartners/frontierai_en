@@ -3,7 +3,7 @@
 > Note: Read the workshop scenario overview [here](../SCENARIO.md) before starting setup.
 
 ## Step 2: MCP Server
-This step sets up the MCP (Model Control Protocol) for applications using Microsoft AI Agentic. To do this, we will install the required Python dependencies and run the MCP server.
+This step sets up the MCP (Model Control Protocol) for applications. To do this, we will install the required Python dependencies and run the MCP server.
 
 ## Prerequisites
 - [Step 1: Workshop Setup](2_00_setup.md) completed
@@ -12,7 +12,7 @@ This step sets up the MCP (Model Control Protocol) for applications using Micros
 
 - ⚡Quick setup with `uv`
 
-- [**uv**](https://github.com/astral-sh/uv) is an ultra-fast Python package installer and resolver written in Rust. It's 10-100x faster than `pip` and automatically manages virtual environments.
+- [**uv**](https://github.com/astral-sh/uv) is an faster Python package installer written in Rust. It's faster than `pip` and automatically manages virtual environments.
 
     > **Action Items:**
     > Install `uv` by running the following command in your terminal:
@@ -173,3 +173,4 @@ if __name__ == "__main__":
 * [Hands-on Lab 1 – MCP Server](2_01_mcp_uv.md)
 * [Hands-on Lab 2 – Backend](2_02_backend_uv.md)
 * [Hands-on Lab 3 – Frontend](2_03_frontend_react.md)
+
