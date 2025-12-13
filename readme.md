@@ -4,7 +4,7 @@
 
 <img src="docs/images/maf.png" width="600"/>
 
-The Microsoft Agent Framework is an agent development framework provided by Azure AI Foundry that supports easy creation of intelligent agents using various AI models and services.
+Microsoft Agent Framework is an agent development framework provided by Azure AI Foundry that supports easy creation of intelligent agents using various AI models and services.
 This framework has the following characteristics:
 
 * Flexible Architecture: Integrated with various AI models and services (Azure OpenAI, Cognitive Services, etc.) to support conversational, automation, and multimodal scenarios.
@@ -13,14 +13,14 @@ This framework has the following characteristics:
 
 ## Hands-on Lab Overview
 
-This hands-on course is part of the Partner Frontier AI campaign, a technical cooperation program between Microsoft Korea and its partners. In this course, we will cover both theory and practice regarding Microsoft Azure's agent orchestration approach, recently integrated into the Microsoft Agent Framework.
+This hands-on course is part of the Partner Frontier AI campaign, a technical enablement & engagement program between Microsoft ASEAN+KR and its partners. In this course, we will cover both theory and hands-on-lab about Microsoft Agent Framework.
 
-* In Part 1, we will understand the basic concepts of the Microsoft Agent Framework through iPython code samples using Jupyter Notebook.
-* In Part 2, we will connect Azure AI Foundry with MCP server using a sample application, run Backend/Frontend apps, and practice various multi-agent orchestration patterns.
+* In Part 1, you will understand the basic concepts of the Microsoft Agent Framework through iPython code samples using Jupyter Notebook.
+* In Part 2, you will connect Microsoft Foundry with MCP server using a sample application, run Backend/Frontend apps, and practice various multi-agent orchestration patterns.
 
 ## Prerequisites (Required Tools)
 
-* Azure Subscription: You will be deploying Azure resources such as Azure AI Foundry. Please verify that you have the necessary permissions.
+* Azure Subscription: You will be deploying resources in portal.azure.com such as Microsoft Foundry and Bing Grouding. Please verify that you have the necessary permissions.
 * Visual Studio Code installation: https://code.visualstudio.com/
 * Python 3.13 version installation (*On some OS, Microsoft Agent Framework may not install with version 3.14.)
 * Please install [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=winget) (If installed from the VS Code terminal, please restart VS Code.)
@@ -61,7 +61,7 @@ This hands-on lab uses 3 .env files. Each .env file is used for the following pu
 * ./mcp/.env.sample ==> .env for MCP server
 * ./agentic_ai/application/.env.sample ==> .env for Agent application
 
-## Lab Sequence
+## Lab
 
 ### Part 1
 * [Microsoft Agent Framework Basic Concept HoL](docs/1_basic_concept.md)
@@ -77,4 +77,5 @@ This hands-on lab uses 3 .env files. Each .env file is used for the following pu
 * The basic-concept-with-msaf.ipynb code in Part 1 was sourced from [Agent Innovator Lab](https://github.com/Azure/agent-innovator-lab). The Agent Innovator Lab repository is operated by Microsoft's AI GBB team and provides hands-on learning materials for developing AI agents based on Microsoft Azure. This repository supports developers in building and improving agents in real-world environments through various modules including RAG implementation, agent design patterns, and evaluation and optimization techniques.
 
 * Part 2's [Microsoft AI Agentic Workshop](https://github.com/aseangps/OpenAIWorkshop) is a Microsoft-provided repository that offers workshop materials and code for building OpenAI-based intelligent solutions. Through this repository, developers can practice various patterns from single agents to multi-agent architectures using the Microsoft Agent Framework and Azure OpenAI services.
+
 
