@@ -1,4 +1,4 @@
-from fastmcp import FastMCP
+# Import fastmcp here
 from fastmcp.server.middleware import Middleware, MiddlewareContext  # added
 from typing import Annotated, List, Optional, Dict, Any  
 from pydantic import BaseModel  
@@ -169,16 +169,9 @@ if token_verifier and not DISABLE_AUTH:
         base_url=PUBLIC_BASE_URL,  # used to build resource metadata URLs
         resource_name="Contoso Customer API",  
     )  
-  
-mcp = FastMCP(  
-    name="Contoso Customer API as Tools",  
-    instructions=(  
-        "All customer, billing and knowledge data is accessible ONLY via the declared "  
-        "tools below.  Return values follow the pydanticschemas.  Always call the most "  
-        "specific tool that answers the user’s question."  
-    ),
-    auth=auth,  
-) 
+
+# insert FastMCP initialization code here
+
 
 ##############################################################################  
 #                              Pydantic MODELS                               #  
@@ -406,10 +399,7 @@ async def _protected_resource_metadata(request: Request):
 ##############################################################################  
 #                               TOOL ENDPOINTS                               #  
 ##############################################################################  
-@mcp.tool(description="List all customers with basic info")  
-async def get_all_customers() -> List[CustomerSummary]:  
-    data = await get_all_customers_async()
-    return [CustomerSummary(**r) for r in data]
+# insert tool endpoint code here 1
   
   
 @mcp.tool(description="Get a full customer profile including their subscriptions")  
@@ -419,26 +409,7 @@ async def get_customer_detail(
     data = await get_customer_detail_async(customer_id)
     return CustomerDetail(**data)  
   
-  
-@mcp.tool(  
-    description=(  
-        "Detailed subscription view → invoices (with payments) + service incidents."  
-    )  
-)  
-async def get_subscription_detail(  
-    subscription_id: Annotated[int, "Subscription identifier value"],  
-) -> SubscriptionDetail:  
-    data = await get_subscription_detail_async(subscription_id)
-
-    # Convert nested data to Pydantic models
-    invoices = []
-    for inv_data in data['invoices']:
-        payments = [Payment(**p) for p in inv_data['payments']]
-        invoices.append(Invoice(**{**inv_data, 'payments': payments}))
-    
-    service_incidents = [ServiceIncident(**si) for si in data['service_incidents']]
-    
-    return SubscriptionDetail(**{**data, 'invoices': invoices, 'service_incidents': service_incidents})  
+# insert tool endpoint code here 2"
   
   
 @mcp.tool(description="Return invoice‑level payments list")  
@@ -622,5 +593,5 @@ async def get_billing_summary(
 ##############################################################################  
 #                                RUN SERVER                                  #  
 ##############################################################################  
-if __name__ == "__main__":  
-    asyncio.run(mcp.run_http_async(host="0.0.0.0", port=8000))  
+# insert Run MCP Server code here
+

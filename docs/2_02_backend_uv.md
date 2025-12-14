@@ -13,27 +13,26 @@ This step configures and runs the backend service for the Microsoft AI Agentic W
 ## Microsoft Agent Framework Options
 
 **Single Agent (`agents.agent_framework.single_agent`):**
-
 - One agent handles all tasks. (Suitable for simple scenarios: FAQ, basic support, etc.)
-- Basic ChatAgent using MCP tools
+- Basic ChatAgent with MCP tools
 - Token-by-token streaming via WebSocket
-- Tool call visualization in React UI
+- Tool call visibility in React UI
 - Session state persistence across requests
 
 **Magentic Multi-Agent (`agents.agent_framework.multi_agent.magentic_group`):**
 - Multiple agents solve problems through collaborative dialogue.
-- Intelligent orchestrator coordinates specialized agents (CRM/Billing, Product/Promotion, Security)
-- Real-time streaming of orchestrator plans and agent responses
+- Intelligent orchestrator coordinates specialist agents (CRM/Billing, Product/Promotions, Security)
+- Real-time streaming of orchestrator planning and agent responses
 - Custom progress ledger for human-in-the-loop support
 - Checkpointing for resumable workflows
-- React UI displays entire internal process: task ledger, instructions, agent tool calls
+- React UI shows full internal process: task ledger, instructions, agent tool calls
 
 **Handoff Multi-Agent (`agents.agent_framework.multi_agent.handoff_multi_domain_agent`):**
-- Pattern that dynamically delegates to more suitable agents while handling tasks
-- Direct agent-user communication with intelligent domain routing
-- Configurable context transfer between specialists (maintaining customer information and history)
+- One agent handles all tasks. (Suitable for simple scenarios: FAQ, basic support, etc.)
+- Direct agent-to-user communication with intelligent domain routing
+- Configurable context transfer between specialists (preserves customer info, history)
 - Smart intent classification for seamless handoffs
-- Cost-efficient (33% fewer LLM calls compared to orchestrator pattern)
+- Cost-efficient (33% fewer LLM calls vs orchestrator patterns)
 
 ### 1. Agent Framework Setup
 
@@ -156,3 +155,4 @@ This step configures and runs the backend service for the Microsoft AI Agentic W
 
 
 **📌 Important:** Agent Framework works best with the **React frontend** when visualizing internal agent processes, orchestrator plans, and tool calls in real-time.
+

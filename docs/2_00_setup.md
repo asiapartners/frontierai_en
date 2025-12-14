@@ -3,7 +3,7 @@
 > Note: Read the workshop scenario overview [here](SCENARIO.md) before starting setup.
 
 ## Step 1: Workshop Setup
-This step guides you through cloning the repository needed to run the workshop, deploying LLM models in Azure AI Foundry, and setting up environment variables.
+This step guides you through setting up environment variables.
 
 ## Prerequisites
 - Azure Subscription
@@ -13,7 +13,8 @@ This step guides you through cloning the repository needed to run the workshop, 
   
 ### 1. Verify Repository and .env File Locations
 
-The AI application to be run in Part 2 will operate from the mcp and agentic_ai directories in the `FrontierAI` repository cloned in the previous step.
+The AI application to be run in Part 2 will operate from the mcp and agentic_ai directories in the `frontieraid_en` repository cloned in the previous step.
+
 > Part 2's Hands-on Lab uses 2 .env files.
 * ./mcp/.env.sample ==> .env for MCP server
 * ./agentic_ai/application/.env.sample ==> .env for Agent application
@@ -74,7 +75,7 @@ DATA_TENANT_ID="default"
 
     <img src="images/step3-02.png" width="500"/>
 
-3. Select **Global Standard** for deployment type, and optionally select the **Korea Central** region.
+3. Select **Global Standard** for deployment type or your preferred region.
 
     <img src="images/step3-03.png" width="500"/>
 
@@ -113,3 +114,4 @@ Once the `.env` file is configured, you can start the MCP server.
 * [Hands-on Lab 1 – MCP Server](2_01_mcp_uv.md)
 * [Hands-on Lab 2 – Backend](2_02_backend_uv.md)
 * [Hands-on Lab 3 – Frontend](2_03_frontend_react.md)
+

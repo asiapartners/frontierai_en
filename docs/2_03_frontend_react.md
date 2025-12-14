@@ -89,7 +89,12 @@ The React frontend connects to `http://localhost:7000` by default.
 
 **Congratulations**: If you have successfully completed all steps, the setup is complete and your agents should be running! For more details, see [How It Works →](2_04_how_it_works.md).
 
-## Lab Sequence
+## Next Step
+If you have successfully finished Frontend App lab, you can go to optional 
+
+* [Human-in-the-Loop Patterns in Microsoft Agent Framework](https://github.com/asiapartners/OpenAIWorkshop/blob/main/agentic_ai/workflow/human-in-the-loop.md)
+
+## Lab
 
 ### Part 1
 * [Microsoft Agent Framework Basic Concept HoL](00_basic_concept.md)
@@ -99,3 +104,4 @@ The React frontend connects to `http://localhost:7000` by default.
 * [Hands-on Lab 1 – MCP Server](2_01_mcp_uv.md)
 * [Hands-on Lab 2 – Backend](2_02_backend_uv.md)
 * [Hands-on Lab 3 – Frontend](2_03_frontend_react.md)
+
