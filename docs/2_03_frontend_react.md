@@ -92,7 +92,7 @@ The React frontend connects to `http://localhost:7000` by default.
 ## Next Step
 If you have successfully finished Frontend App lab, you can go to optional 
 
-* [Human-in-the-Loop Patterns in Microsoft Agent Framework](https://github.com/asiapartners/OpenAIWorkshop/blob/main/agentic_ai/workflow/human-in-the-loop.md)
+* [Human-in-the-Loop Patterns in Microsoft Agent Framework](https://github.com/asiapartners/frontierai_en/blob/main/docs/3_%5Boptional%5Dhuman_in_the_loop.md)
 
 ## Lab
 
